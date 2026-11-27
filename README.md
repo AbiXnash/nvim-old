@@ -1,8 +1,20 @@
-# AstroNvim Template
+# nvim-old
 
-**NOTE:** This is for AstroNvim v4+
+> **Older config, kept for reference.** My current Neovim setup is [AbiXnash/nvim](https://github.com/AbiXnash/nvim)
+> (Neovim 0.12, lazy.nvim, the [Hell Pine](https://github.com/abxengg/hell-pine.nvim) colorscheme).
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+My earlier Neovim config, built on [AstroNvim](https://github.com/AstroNvim/AstroNvim) v4+ from its user template.
+
+## What's in it
+
+- AstroCommunity packs for Lua and Python, plus community plugins such as nvim-surround, the VS Code-style heirline
+  winbar and codesnap (`lua/community.lua`)
+- Plugin overrides in `lua/plugins/`: AstroCore, AstroLSP, AstroUI, cmp, conform, none-ls, nvim-lint, flash, fzf,
+  neo-tree, gitsigns, nvim-ufo, rainbow-delimiters, toggleterm, treesitter, undotree, and React formatting
+- Java settings in `lua/ftplugin/java.lua`
+- `package.json`: the Node tools it expects (TypeScript language server, Angular language service, ESLint /
+  eslint_d, Prettier), installed with `npm install`
+- `.stylua.toml`, `selene.toml` and `neovim.yml` for linting the config itself
 
 ## 🛠️ Installation
 
@@ -15,16 +27,10 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
 #### Clone the repository
 
 ```shell
-git clone https://github.com/AbiXnash/nvim ~/.config/nvim
+git clone https://github.com/AbiXnash/nvim-old ~/.config/nvim
 ```
 
 #### Start Neovim
